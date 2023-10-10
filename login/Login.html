@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Login form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="center-container">
+    <div class="login-container">
+        <h2>Log in</h2>
+        <form action="process_login.php" method="post">
+            <label for="username">Email</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Log in">
+
+            <p class="create-account-link">Don't have an account? <a href="registration.html">Create Account</a></p> <!-- Ссылка на страницу регистрации -->
+        </form>
+    </div>
+</div>
+</body>
+</html>

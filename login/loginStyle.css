@@ -1,0 +1,70 @@
+body {
+    background-image: url("LoginImage/btc.jpg");
+    background-size: cover; /* Растягивает фон на весь экран */
+    background-repeat: no-repeat; /* Запрет повторения фоновой картинки */
+    width: 100%;
+    height: 100vh; /* Используйте высоту видимой области браузера, чтобы элементы были посередине */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative; /* Добавьте это для абсолютного позиционирования */
+}
+
+.create-account-link {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Размещение вверху */
+    right: 0; /* Размещение справа */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Центрирует input и button элементы внутри формы */
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box; /* Учтет padding и border внутри ширины элемента */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Добавьте это, чтобы центрировать кнопку "Log in" по горизонтали */
+.login-container input[type="submit"] {
+    width: 50%; /* Устанавливаем ширину в 50% от текущей ширины */
+    margin: 0 auto;
+}
+
+
