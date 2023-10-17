@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en" >
 <head>
-    <title>Login form</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>HTML5 Login Form with validation Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./loginStyle.css">
+
 </head>
 <body>
-<div class="center-container">
-    <div class="login-container">
-        <h2>Log in</h2>
-        <form action="process_login.php" method="post">
-            <label for="username">Email</label>
-            <input type="text" id="username" name="username" required><br><br>
+<!-- partial:index.partial.html -->
+<div id="login-form-wrap">
+    <h2>Login</h2>
+    <form id="login-form">
+        <p>
+            <label for="email"></label><label for="Email"></label><input type="text" id="Email" name="Email" placeholder="Email" required><i class="validation"><span></span><span></span></i>
+        </p>
+        <p>
+            <label for="password"></label><label for="Password"></label><input type="Password" id="Password" name="Password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
+        </p>
+        <p>
+            <input type="submit" id="login" value="Login">
+        </p>
+    </form>
+    <div id="create-account-wrap">
+        <p>Not a member? <a href="#">Create Account</a><p>
+    </div><!--create-account-wrap-->
+</div><!--login-form-wrap-->
+<!-- partial -->
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required><br><br>
-
-            <input type="submit" value="Log in">
-
-            <p class="create-account-link">Don't have an account? <a href="registration.html">Create Account</a></p> <!-- Ссылка на страницу регистрации -->
-        </form>
-    </div>
-</div>
 </body>
 </html>

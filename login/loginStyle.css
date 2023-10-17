@@ -1,70 +1,158 @@
 body {
-    background-image: url("LoginImage/btc.jpg");
-    background-size: cover; /* Растягивает фон на весь экран */
-    background-repeat: no-repeat; /* Запрет повторения фоновой картинки */
-    width: 100%;
-    height: 100vh; /* Используйте высоту видимой области браузера, чтобы элементы были посередине */
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #9f9da7;
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #2b3e51;
 }
-
-
 
 h2 {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-.login-container {
+    font-weight: 300;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    position: relative; /* Добавьте это для абсолютного позиционирования */
 }
 
-.create-account-link {
-    position: absolute; /* Абсолютное позиционирование */
-    top: 0; /* Размещение вверху */
-    right: 0; /* Размещение справа */
-    font-size: 14px;
-    margin-top: 10px;
+p {
+    position: relative;
 }
 
-/* Центрирует input и button элементы внутри формы */
-.login-container input[type="text"],
-.login-container input[type="password"],
-.login-container input[type="submit"] {
+a,
+a:link,
+a:visited,
+a:active {
+    color: #3ca9e2;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+a:focus, a:hover,
+a:link:focus,
+a:link:hover,
+a:visited:focus,
+a:visited:hover,
+a:active:focus,
+a:active:hover {
+    color: #329dd5;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#login-form-wrap {
+    background-color: #fff;
+    width: 35%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+#login-form {
+    padding: 0 60px;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
     width: 100%;
-    box-sizing: border-box; /* Учтет padding и border внутри ширины элемента */
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    outline: none;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 4px;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0 0 0 10px;
+    margin: 0;
+    color: #8a8b8e;
+    border: 1px solid #c2c0ca;
+    font-style: normal;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    background: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3ca9e2;
+}
+
+input[type="text"]:focus:invalid,
+input[type="password"]:focus:invalid {
+    color: #cc1e2b;
+    border-color: #cc1e2b;
+}
+
+input[type="text"]:valid ~ .validation,
+input[type="password"]:valid ~ .validation {
+    display: block;
+    border-color: #0C0;
+}
+
+input[type="text"]:valid ~ .validation span,
+input[type="password"]:valid ~ .validation span {
+    background: #0C0;
+    position: absolute;
+    border-radius: 6px;
+}
+
+input[type="text"]:valid ~ .validation span:first-child,
+input[type="password"]:valid ~ .validation span:first-child {
+    top: 30px;
+    left: 14px;
+    width: 20px;
+    height: 3px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="text"]:valid ~ .validation span:last-child,
+input[type="password"]:valid ~ .validation span:last-child {
+    top: 35px;
+    left: 8px;
+    width: 11px;
+    height: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.validation {
+    display: none;
+    position: absolute;
+    content: " ";
+    height: 60px;
+    width: 30px;
+    right: 15px;
+    top: 0;
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    border: none;
+    background-color: #3ca9e2;
     color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
     cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+input[type="submit"]:hover {
+    background-color: #329dd5;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
-/* Добавьте это, чтобы центрировать кнопку "Log in" по горизонтали */
-.login-container input[type="submit"] {
-    width: 50%; /* Устанавливаем ширину в 50% от текущей ширины */
-    margin: 0 auto;
+#create-account-wrap {
+    background-color: #eeedf1;
+    color: #8a8b8e;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 4px 4px;
 }
-
 
