@@ -23,7 +23,7 @@ body {
     border: 4px solid #f15d43;
     text-align: left;
     padding: 50px 200px;
-    border-radius: 0;
+    border-radius: 15px;
 }
 
 .login-button {
@@ -41,8 +41,7 @@ body {
     border: 2px solid #f15d43; /* Оранжевая рамка */
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 15px;
 }
 
 .login-button a:hover {
