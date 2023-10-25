@@ -46,11 +46,11 @@
             </div>
 
             <script>
-                document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function () {
                     const passwordField = document.getElementById('inputPassword4');
                     const showPasswordButton = document.getElementById('showPasswordButton');
 
-                    showPasswordButton.addEventListener('click', function() {
+                    showPasswordButton.addEventListener('click', function () {
                         if (passwordField.type === 'password') {
                             passwordField.type = 'text';
                             showPasswordButton.innerHTML = '<i class="bi bi-eye-slash"></i>';

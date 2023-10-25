@@ -1,17 +1,20 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
 }
-body{
+
+body {
     background: #e5e5e5;
 
 }
-form{
+
+form {
     box-shadow: 2px 6px 100px #ffffff;
 
 }
+
 .container {
     font-style: italic;
     font-family: "Open Sans", sans-serif;
@@ -26,10 +29,11 @@ form{
     color: black;
 
 }
+
 .btn-primary:hover {
     background-color: #e5e5e5; /* Изменить фон при наведении на оранжевый */
     color: black; /* Сделать текст белым при наведении */
-    border: 2px solid  #f15d43; /* Оранжевая рамка */
+    border: 2px solid #f15d43; /* Оранжевая рамка */
 }
 
 .form-control {
