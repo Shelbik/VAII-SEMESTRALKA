@@ -3,14 +3,45 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="preview.css">
-    <title>Premium Car Rental</title>
+    <title>Premium Car Detailing</title>
 </head>
 <body>
+<div class="theme-button">
+    <button id="theme-toggle">Toggle Theme</button>
+</div>
 <div class="container">
-    <span id="rentCarText">PREMIUM<br>CAR<br>RENTAL</span>
+    <span id="rentCarText">PREMIUM<br>CAR<br>DETAILING</span>
 </div>
 <div class="login-button">
     <a href="login.html">Sign In / Log In</a>
 </div>
+<div class="visit-website-button">
+    <a href="your-website-url">Visit the WebSite</a>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Функция для изменения текста на кнопке
+        function toggleThemeText() {
+            if (body.classList.contains('dark-theme')) {
+                themeToggle.textContent = 'Light Theme';
+            } else {
+                themeToggle.textContent = 'Dark Theme';
+            }
+        }
+
+        themeToggle.addEventListener('click', function () {
+            body.classList.toggle('dark-theme'); // Переключение темы
+            toggleThemeText(); // Изменение текста на кнопке
+        });
+
+        // Изначально установите текст на кнопке в соответствии с текущей темой
+        toggleThemeText();
+    });
+</script>
+
 </body>
 </html>
