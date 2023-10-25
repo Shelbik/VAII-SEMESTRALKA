@@ -33,50 +33,49 @@ body{
     padding: 0 40px;
     box-sizing: border-box;
 }
-form .txt_field{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
 
+.txt_field {
+    position: relative;
+    margin: 30px 0;
 }
-.txt_field input{
+
+.txt_field input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
     font-size: 16px;
-    border: none;
+    border: 2px solid #adadad;
     background: none;
     outline: none;
 }
-.txt_field label{
+
+.txt_field label {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 5px;
     color: #adadad;
-    transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
-    transition: .5s;
 }
-.txt_field span::before{
+
+.txt_field input:focus ~ label {
+    color: #f15d43; /* Сделайте текст метки оранжевым при фокусировке */
+}
+
+.txt_field input:valid ~ label {
+    top: -30px; /* Поднимите метку, если поле валидно (заполнено) */
+}
+
+.txt_field span::before {
     content: '';
     position: absolute;
     top: 40px;
     left: 0;
-    width: 0%;
+    width: 0;
     height: 2px;
     background: #f15d43;
-    transition: .5s;
 }
-.txt_field input:focus ~ label,
-.txt_field input:valid ~ label{
-    top: -5px;
-    color: #f15d43;
-}
-.txt_field input:focus ~ span::before,
-.txt_field input:valid ~ span::before{
-    width: 100%;
-}
+
 .pass{
     margin: -5px 0 20px 5px;
     color: #a6a6a6;
