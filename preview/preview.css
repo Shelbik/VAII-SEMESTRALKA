@@ -1,0 +1,314 @@
+body {
+    overflow: hidden;
+}
+
+/* Это разрешит вертикальную прокрутку внутри .box-herosection и .text-heading, если их содержимое превышает высоту. */
+.box-herosection, .text-heading {
+    overflow-y: auto;
+}
+
+.container {
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+}
+
+.box-header {
+    position: relative;
+    width: 1301px;
+    height: 80px;
+}
+
+.box-header .header {
+    position: fixed;
+    width: 1301px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.box-header .logo {
+    position: absolute;
+    width: 272px;
+    height: 80px;
+    top: 0;
+    left: 0;
+}
+
+.box-header .label-text {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    font-family: "Poppins-Regular", Helvetica, serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 80px;
+    white-space: nowrap;
+
+}
+
+.box-header .overlap-group {
+    position: absolute;
+    width: 32px;
+    height: 31px;
+    top: 23px;
+    left: 0;
+}
+
+.box-header .menu {
+    position: absolute;
+    width: 609px;
+    height: 48px;
+    top: 16px;
+    left: 700px;
+
+}
+
+.box-header .overlap {
+    position: absolute;
+    width: 210px;
+    height: 48px;
+    top: 0;
+    left: 429px;
+    border-radius: 60px;
+    background: #ffd613;
+}
+
+.box-header .login {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    font-family: "Poppins-Regular", Helvetica, serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+    line-height: 0.1px;
+}
+
+.box-header .about-us {
+    position: absolute;
+    top: 24px;
+    left: -8px;
+    font-family: var(--h3-menu-font-family);
+    font-weight: var(--h3-menu-font-weight);
+    color: #ffffff;
+    font-size: var(--h3-menu-font-size);
+    letter-spacing: var(--h3-menu-letter-spacing);
+    line-height: var(--h3-menu-line-height);
+    font-style: var(--h3-menu-font-style);
+}
+
+.box-header .services {
+    position: absolute;
+    top: 24px;
+    left: 140px;
+    font-family: "Poppins-Regular", Helvetica, serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 0.1px;
+}
+
+.box-header .contact-us {
+    position: absolute;
+    top: 24px;
+    left: 277px;
+    font-family: "Poppins-Regular", Helvetica, serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 0.1px;
+}
+
+
+
+
+
+.box-herosection {
+    position: relative;
+    width: 1315px;
+    height: 644px;
+}
+
+.box-herosection .hero-section {
+    position: fixed;
+    width: 1319px;
+    height: 644px;
+    top: 0;
+    left: 0;
+}
+
+.box-herosection .overlap {
+    position: absolute;
+    width: 613px;
+    height: 644px;
+    top: 0;
+    left: 702px;
+}
+
+.box-herosection .rectangle-2 {
+    top: 0;
+    left: 469px;
+    position: absolute;
+    width: 144px;
+    height: 125px;
+}
+
+.box-herosection .overlap-group-wrapper {
+    position: absolute;
+    width: 218px;
+    height: 383px;
+    top: 97px;
+    left: 57px;
+}
+
+.box-herosection .overlap-car1 {
+    position: relative;
+    height: 383px;
+}
+
+.box-herosection .first-car-wash {
+    width: 218px;
+    height: 373px;
+    border-radius: 30px 0px 30px 0px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #d9d9d9;
+}
+
+.box-herosection .car-wash-detailing {
+    position: absolute;
+    width: 218px;
+    height: 383px;
+    top: 50px;
+    left: 0;
+    object-fit: cover;
+}
+
+.box-herosection .overlap-wrapper {
+    position: absolute;
+    width: 258px;
+    height: 273px;
+    top: 47px;
+    left: 298px;
+}
+
+.box-herosection .overlap-car2 {
+    position: relative;
+    height: 273px;
+}
+
+.box-herosection .second-car-wash {
+    width: 258px;
+    height: 266px;
+    border-radius: 30px 30px 0px 0px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #d9d9d9;
+}
+
+.box-herosection .car-wash-detailing-2 {
+    width: 258px;
+    height: 273px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    object-fit: cover;
+}
+
+.box-herosection .div-wrapper {
+    position: absolute;
+    width: 279px;
+    height: 300px;
+    top: 344px;
+    left: 302px;
+}
+
+.box-herosection .third-car-wash {
+    position: relative;
+    height: 300px;
+    top: 40px;
+}
+
+.box-herosection .rectangle-car3 {
+    width: 279px;
+    height: 292px;
+    border-radius: 0px 30px 30px 30px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-color: #d9d9d9;
+}
+
+.box-herosection .car-wash-detailing-3 {
+    width: 279px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.box-herosection .text-heading {
+    position: absolute;
+    width: 652px;
+    height: 497px;
+    top: 109px;
+    left: 0;
+}
+
+.box-herosection .SUB-heading {
+    position: absolute;
+    width: 478px;
+    top: 294px;
+    left: 34px;
+    font-family: var(--h2-subtitle-font-family);
+    font-weight: var(--h2-subtitle-font-weight);
+    color: #ffffff;
+    font-size: var(--h2-subtitle-font-size);
+    letter-spacing: var(--h2-subtitle-letter-spacing);
+    line-height: var(--h2-subtitle-line-height);
+    font-style: var(--h2-subtitle-font-style);
+}
+
+.box-herosection .MAIN-heading {
+    position: absolute;
+    width: 625px;
+    top: 19px;
+    left: 27px;
+    font-family: var(--h1-title-font-family);
+    font-weight: var(--h1-title-font-weight);
+    color: transparent;
+    font-size: var(--h1-title-font-size);
+    letter-spacing: var(--h1-title-letter-spacing);
+    line-height: var(--h1-title-line-height);
+    font-style: var(--h1-title-font-style);
+}
+
+.box-herosection .text-wrapper {
+    color: #ffd613;
+    font-family: var(--h1-title-font-family);
+    font-style: var(--h1-title-font-style);
+    font-weight: var(--h1-title-font-weight);
+    letter-spacing: var(--h1-title-letter-spacing);
+    line-height: var(--h1-title-line-height);
+    font-size: var(--h1-title-font-size);
+}
+
+.box-herosection .span {
+    color: #ffd613;
+    font-family: var(--h1-title-font-family);
+    font-style: var(--h1-title-font-style);
+    font-weight: var(--h1-title-font-weight);
+    letter-spacing: var(--h1-title-letter-spacing);
+    line-height: var(--h1-title-line-height);
+    font-size: var(--h1-title-font-size);
+}
