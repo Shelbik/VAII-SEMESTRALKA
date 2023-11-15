@@ -30,6 +30,8 @@ form {
 
 }
 
+
+
 .btn-primary:hover {
     background-color: #e5e5e5; /* Изменить фон при наведении на оранжевый */
     color: black; /* Сделать текст белым при наведении */
@@ -59,6 +61,24 @@ form {
     border: 2px solid #f15d43; /* Оранжевая рамка */
 }
 
+/* Медиа-запрос для мобильных устройств с шириной экрана до 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Уменьшить размер шрифта для мобильных устройств */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .btn-primary {
+        padding: 8px;
+    }
+
+    .form-control {
+        padding: 8px;
+    }
+}
 
 
 
