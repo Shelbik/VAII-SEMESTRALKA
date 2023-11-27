@@ -1,0 +1,87 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+}
+
+.box {
+    width: 1440px;
+    height: 630px;
+}
+
+.box .about-us {
+    position: fixed;
+    width: 1444px;
+    height: 630px;
+    top: 0;
+    left: 0;
+}
+
+.box .overlap-group {
+    position: relative;
+    width: 1440px;
+    height: 630px;
+    background-color: #000000;
+}
+
+.box .icon {
+    position: absolute;
+    width: 167px;
+    height: 144px;
+    top: 230px;
+    left: 167px;
+}
+
+.box .separator-line {
+    position: absolute;
+    width: 1px;
+    height: 235px;
+    top: 256px;
+    left: 377px;
+    object-fit: cover;
+}
+
+.box .text-wrapper {
+    position: absolute;
+    width: 893px;
+    top: 269px;
+    left: 408px;
+    font-family: "Poppins-Regular", Helvetica, serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 35px;
+
+}
+
+.box .overlap {
+    position: absolute;
+    width: 273px;
+    height: 99px;
+    top: 84px;
+    left: 130px;
+}
+
+.box .heading {
+    position: absolute;
+    top: 19px;
+    left: 29px;
+    font-family: "Poppins-Regular", Helvetica, serif;
+    font-weight: 400;
+    color: #ffd613;
+    font-size: 55px;
+    letter-spacing: 0;
+    line-height: 80px;
+    white-space: nowrap;
+}
+.box .text-wrapper br {
+    content: '\00a0\00a0'; /* Добавляет пробел после <br> */
+    display: block;
+    margin-bottom: 20px; /* Регулируйте значение по вашему усмотрению */
+}

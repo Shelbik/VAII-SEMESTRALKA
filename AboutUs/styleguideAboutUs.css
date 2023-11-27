@@ -1,0 +1,20 @@
+:root {
+    --h1-title-font-family: "Poppins-Regular", Helvetica;
+    --h1-title-font-weight: 400;
+    --h1-title-font-size: 85px;
+    --h1-title-letter-spacing: 0px;
+    --h1-title-line-height: 80px;
+    --h1-title-font-style: normal;
+    --h2-subtitle-font-family: "Poppins-Regular", Helvetica;
+    --h2-subtitle-font-weight: 400;
+    --h2-subtitle-font-size: 35px;
+    --h2-subtitle-letter-spacing: 0px;
+    --h2-subtitle-line-height: 40px;
+    --h2-subtitle-font-style: normal;
+    --h3-menu-font-family: "Poppins-Regular", Helvetica;
+    --h3-menu-font-weight: 400;
+    --h3-menu-font-size: 20px;
+    --h3-menu-letter-spacing: 3px;
+    --h3-menu-line-height: 0px;
+    --h3-menu-font-style: normal;
+}
