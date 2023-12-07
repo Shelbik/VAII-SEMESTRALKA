@@ -133,6 +133,13 @@
         }
     });
 
+    const inputCarNumber = createInput('input-car-number', 'text', 'Car Number', 10);
+    inputCarNumber.addEventListener('input', function () {
+        if (this.value.length > 10) {
+            this.value = this.value.substring(0, 10); // Обрезаем до 10 символов
+        }
+    });
+
     const inputPhoneNumber = createInput('input-phone-number', 'text', 'Phone number', 15);
     inputPhoneNumber.addEventListener('input', function () {
         if (this.value.length > 15) {
