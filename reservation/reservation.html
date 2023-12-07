@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your HTML Page</title>
+
+    <link rel="stylesheet" href="reservationStyleGuide.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="globals.css"/>
+</head>
+<body>
+
+<script>
+    function createBox() {
+        const box = document.createElement('div');
+        box.className = 'box';
+
+        const getInTouch = document.createElement('div');
+        getInTouch.className = 'get-in-touch';
+
+        const overlap = document.createElement('div');
+        overlap.className = 'overlap';
+
+        const yourEmail = document.createElement('div');
+        yourEmail.className = 'your-email';
+        yourEmail.textContent = 'example@yourmail.com';
+
+        const phoneNumber = document.createElement('div');
+        phoneNumber.className = 'phone-number';
+        phoneNumber.textContent = '0944091716';
+
+        const address = document.createElement('p');
+        address.className = 'adress';
+        address.textContent = 'Skalka nad Vahom, Ujazd, 2, Trencin State, Slovakia';
+
+        overlap.appendChild(yourEmail);
+        overlap.appendChild(phoneNumber);
+        overlap.appendChild(address);
+
+        const buttonSendMessage = document.createElement('div');
+        buttonSendMessage.className = 'button-send-message';
+
+        const overlapGroup = document.createElement('div');
+        overlapGroup.className = 'overlap-group';
+
+        const textWrapper = document.createElement('div');
+        textWrapper.className = 'text-wrapper';
+        textWrapper.textContent = 'Send message';
+
+
+        const arrowImage = document.createElement('img');
+        arrowImage.className = 'iconsax-linear';
+        arrowImage.alt = 'Iconsax linear';
+        arrowImage.src = 'https://c.animaapp.com/IrOwt75j/img/iconsax-linear-arrowright3.svg';
+
+        overlapGroup.appendChild(textWrapper);
+        overlapGroup.appendChild(arrowImage);
+
+        buttonSendMessage.appendChild(overlapGroup);
+
+        const contactForm = document.createElement('div');
+        contactForm.className = 'contact-form';
+
+        // Добавленные текстовые поля
+        const inputName = createInput('input-name', 'text', 'Name', 50);
+        const inputEmail = createInput('input-email', 'email', 'Email');
+        const inputPhoneNumber = createInput('input-phone-number', 'text', 'Phone number', 15);
+        const inputCarNumber = createInput('input-car-number', 'text', 'Car Number', 15);
+        const possibilitiesSelect = createSelect('select-possibilities', [
+            '1 - Car wash only',
+            '2 - Car wash and paint correction',
+            '3 - Car wash only and Ceramic coating',
+            '4 - Car wash and full detailing',
+            '5 - Car wash and car wrapping',
+            '6 - All Above'
+        ]);
+
+
+        function createSelect(className, options) {
+            const select = document.createElement('select');
+            select.className = className;
+
+            options.forEach(optionText => {
+                const option = document.createElement('option');
+                option.value = optionText;
+                option.text = optionText;
+                select.add(option);
+            });
+            select.style.background = 'black';
+
+            return select;
+        }
+
+
+        contactForm.appendChild(inputName);
+        contactForm.appendChild(inputEmail);
+        contactForm.appendChild(inputPhoneNumber);
+        contactForm.appendChild(inputCarNumber);
+        contactForm.appendChild(possibilitiesSelect)
+
+        const iconsImage = document.createElement('img');
+        iconsImage.className = 'icons';
+        iconsImage.alt = 'Icons';
+        iconsImage.src = 'https://c.animaapp.com/IrOwt75j/img/icons@2x.png';
+
+        const overlap5 = document.createElement('div');
+        overlap5.className = 'overlap-5';
+
+
+        const heading = document.createElement('div');
+        heading.className = 'heading';
+        heading.textContent = 'Get in touch';
+
+        overlap5.appendChild(heading);
+
+        getInTouch.appendChild(overlap);
+        getInTouch.appendChild(buttonSendMessage);
+        getInTouch.appendChild(contactForm);
+        getInTouch.appendChild(iconsImage);
+        getInTouch.appendChild(overlap5);
+
+        box.appendChild(getInTouch);
+
+        return box;
+    }
+
+    function createInput(className, type, placeholder, maxLength) {
+        const input = document.createElement('input');
+        input.className = className;
+        input.type = type;
+        input.placeholder = placeholder;
+        if (maxLength) {
+            input.maxLength = maxLength;
+        }
+        return input;
+    }
+
+    function createTextarea(className, placeholder, maxLength) {
+        const textarea = document.createElement('textarea');
+        textarea.className = className;
+        textarea.placeholder = placeholder;
+        if (maxLength) {
+            textarea.maxLength = maxLength;
+        }
+        return textarea;
+    }
+
+    // Используйте функцию createBox() для создания вашего элемента и добавьте его к DOM, как вам нужно
+    document.body.appendChild(createBox());
+</script>
+
+</body>
+</html>
